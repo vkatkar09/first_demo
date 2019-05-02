@@ -4,13 +4,15 @@ app.config(function($routeProvider) {
     .when("/", {
         templateUrl : "views/main.html"
     })
-    .when("/red", {
-        templateUrl : "views/red.html"
+    .when("/login", {
+        templateUrl : "views/login.html",
+        controller: 'loginController',
     })
     .when("/green", {
         templateUrl : "views/green.html"
     })
-    .when("/blue", {
-        templateUrl : "views/blue.html"
+    .when("/registration", {
+        templateUrl : "views/registration.html",
+        controller: "registrationController",
     });
 });
